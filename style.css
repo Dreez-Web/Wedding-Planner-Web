@@ -304,7 +304,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
     .diagonal-banner {
         position: absolute;
@@ -393,3 +393,94 @@ nav ul li a:hover {
         align-items: center;
     }
 }
+
+@media screen and (max-width: 900px) {
+
+    .diagonal-banner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 200%;
+        height: 70vh;
+        background-color: var(--color-fucsia);
+        transform: rotate(-10deg);
+        transform-origin: center;
+        transform: translate(-10%);
+        z-index: 2;
+    }
+    nav ul{
+       display: none; 
+    }
+
+    .container-text p{
+        display: none;
+    }
+
+    .container-text h1 {
+        position: absolute;
+        font-family: var(--fuente-principal);
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: var(--color-grafito);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.979);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+    
+    }
+
+    .servicios{
+        height: 230vh;
+        width: 100%;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 300px); /* Tres columnas de igual ancho */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem  ;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        flex-wrap: wrap;
+        
+    }
+
+    .eventos{
+        background-color: var(--color-blanco-claro);
+        height: 100vh;
+        width: 100%;
+        
+    }
+
+    .carousel{
+        
+    }
+
+    .preguntas{
+        display: none;
+    }
+
+    .main-footer{
+        max-height: 50vh;
+        background-color: var(--color-celeste);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;    
+    }
+
+    .section-inner{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
